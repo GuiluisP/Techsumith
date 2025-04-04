@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    text-align: center;
+    background-image: url(J59.gif); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-position: center;
+}
+h1 {
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 0 10px rgb(42, 239, 45), 0 0 20px rgb(103, 249, 59), 0 0 30px #00f;
+
+}
+
+header {
+    background-color: #007bff;
+    color: whitesmoke;
+    padding: 40px;
+    font-size: 64px;
+    background: url(J4o.gif); 
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+section {
+    background-color: rgba(0, 136, 204, 0.8);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #0099ff, #00ccff);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+    color: #333;
+}
+
+.palestrante img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, button {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #000000;
+    color: rgb(241, 150, 150);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+/* Adicionando responsividade para diferentes tamanhos de tela */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    header {
+        padding: 20px;
+        font-size: 48px;
+    }
+    section {
+        max-width: 90%;
+        padding: 10px;
+    }
+    .palestrante img {
+        width: 80px;
+        height: 80px;
+    }
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 36px;
+    }
+    .palestrante img {
+        width: 60px;
+        height: 60px;
+    }
+    section {
+        max-width: 100%;
+        padding: 8px;
+    }
+    button {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
